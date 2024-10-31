@@ -7,7 +7,7 @@ Systemd users should have the filter-chain.service user service enabled after pr
 Dinit+Turnstile users might have a filter-chain user service but I can not guarantee this.
 
 # Setup
-replace `sofa-path` with a sofa file of your choosing. You can download many of them from https://kutt.it/BinauralHRTF
+replace `sofa-path` with a sofa file of your choosing. You can download many of them from https://kutt.it/BinauralHRTF.
 replace `eq-path` with a non-stereo convolution eq from https://autoeq.app (Easyeffects eq presets will not work. Those are parametric and I chose to go convolution over personal preference and ease of use.)
 
 Those who were able to enable the filter-chain service earlier can copy this to `~/.config/pipewire/filter-chain.conf.d/99-virtual-surround.conf`.
