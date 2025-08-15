@@ -1,3 +1,5 @@
+# Now with 7.1.4 support. Vertical channels work in wine on dolby atmos or windows spatial audio.
+
 # Pipewire-Virtual-Surround
 A tunable configuration file example for sofa based virtual surround on linux.
 
@@ -8,7 +10,6 @@ Dinit+Turnstile users might have a filter-chain user service but I can not guara
 
 # Setup
 replace `sofa-path` with a sofa file of your choosing. You can download many of them from https://kutt.it/BinauralHRTF
-replace `eq-path` with a non-stereo convolution eq from https://autoeq.app (Easyeffects eq presets will not work. Those are parametric and I chose to go convolution over personal preference and ease of use.)
 
 Those who were able to enable the filter-chain service earlier can copy this to `~/.config/pipewire/filter-chain.conf.d/99-virtual-surround.conf`.
 Anyone else will have to copy this to `~/.config/pipewire/pipewire.conf.d/99-virtual-surround.conf`. 
