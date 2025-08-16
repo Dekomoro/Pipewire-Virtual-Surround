@@ -9,9 +9,6 @@ Systemd users should have the filter-chain.service user service enabled after pr
 Run either `systemctl --user enable --now filter-chain.service` or `systemctl --global enable filter-chain.service # Enable filter-chain support for all users` to enable this.
 Dinit+Turnstile users might have a filter-chain user service but I can not guarantee this.
 
-# Features
-
-
 # Setup
 replace `sofa-path` with a sofa file of your choosing. You can download many of them from https://kutt.it/BinauralHRTF. A good baseline is EAC_Default.
 If you use the Equalizer Sink be sure to replace `eq-path` with your convulution eq. If you don't already have one, it can be obtained from https://autoeq.app or https://peqdb.com/
@@ -24,7 +21,10 @@ You can reload the configuration files by either running `systemctl --user resta
 After this is all done you should make sure that the sinks are pointed to the right devices with pavucontrol or pavucontrol-qt. You should optionally make sure your virtual surround sink outputs to the equalizer sink.
 
 # Special Thanks
-https://github.com/ThreeDeeJay for providing contributions to the 3d audio space, an excellent amount of documentation, and setting up the hrtf link. 
-https://codeberg.org/khip/khip for providing the ladspa
+https://github.com/ThreeDeeJay for providing contributions to the 3d audio space, an excellent amount of documentation, and setting up the hrtf link.
+
+https://codeberg.org/khip/khip for providing the noise cancellation ladspa.
+
 Razer for inspiring me to upgrade my virtual surround sink to match and exceed the capabilities of some new software for one of their headsets.
+
 https://discord.gg/B4n97X7dG4 The Binaural Audio Discord by 3DJ for more inspiration. Feel free to ask me any questions there in regards to this and I'll answer them to the best of my ability.
